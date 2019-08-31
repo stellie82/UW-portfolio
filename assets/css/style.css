@@ -70,3 +70,33 @@ a:visited {
 a:hover {
     color: #777777;
 }
+
+#hiking, #running, #travel, #question {
+    vertical-align: top;
+    width: 100%;
+    height: 185px;
+}
+
+.container.invisible {
+    height: 200px;
+    width: 100%;
+}
+
+.badge-primary {
+    height: 40px;
+    width: 100%;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+label {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 28px;
+}
+
+.btn.btn-info {
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
