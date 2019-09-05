@@ -83,6 +83,8 @@ a:hover {
 }
 
 .badge-primary {
+    position: relative;
+    bottom: 20px;
     height: 40px;
     width: 100%;
     color: #ffffff;
