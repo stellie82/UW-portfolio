@@ -1,71 +1,52 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
     <title>Welcome!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/laugh.jpg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <div class="name p-4">
-                <h2><b>Stella Kim</b></h2>
-            </div>
 
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ml-auto">
-                    <li class="breadcrumb-item">
-                        <a href="index.html">About</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="jumbotron jumbotron-fluid bg-dark text-light px-5">
+        <h1 class="display-4">Stella Kim</h1>
+        <p class="lead">Web Developer</p>
+        <!-- <hr class="my-4"> -->
+        <a href="https://www.linkedin.com/in/stella-kim-14aa1b48/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/stellie82?tab=repositories" target="_blank">GitHub</a>
+    </div>
 
-    <div class="container">
-        <div class="row-fluid mt-5 p-3">
-            <div class="col-12">
-                <h2><b>About Me</b></h2>
-                <hr>
-                <div class="float-left pr-3">
-                    <img src="assets/images/20190808_132312.jpg" id="me" alt="high above">
+    <!-- main portion of page content -->
+    <div class="container-fluid px-5">
+        <!-- <div class="clearfix"> -->
+        <div class="row-fluid">
+            <div class="col-2 sidebar">
+                <div class="sidebar sticky">
+                    <li class="nav flex-column"><a href="about.html">About</a></li>
+                    <li class="nav flex-column"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="nav flex-column"><a href="resume.html">Resume</a></li>
+                    <li class="nav flex-column"><a href="contact.html">Contact</a></li>
                 </div>
-                <p>Aloha, and welcome to my page!</p>
-                <p>This bootcamp will be quite the journey for me. I have always studied math and science but never
-                    anything like programming. Luckily, there are similarities and I am hoping my skills can push me
-                    through this course. It's not that I am bored with work, but I have found that some aspects of it
-                    get me wondering more. So here I am exploring my curiosity with you folks and I hope to build some
-                    cool things along the way.</p>
-                <p>More about me... I am a full-time employee and mom to a sweet, adventurous 5 year old. I love the
-                    outdoors, especially hiking here in the northwest, as well as running and yoga. As mentioned early
-                    on, I recently finished hiking the Wonderland Trail and would love to summit Rainier next year. I am
-                    also getting married in September and am planning on hiking the Dolomites as a honeymoon after this
-                    course is done.</p>
-                <p>Feel free to reach out to me. I would love to share ideas and get to know you.</p>
+            </div>
+            <div class="col-9 main">
+                <img src="assets/images/20190808_132312.jpg" id="me" alt="high above">
             </div>
         </div>
     </div>
+    </div>
 
-    <div class="container invisible"></div>
+    <!-- inserted an invisible block here to be able to see content behind the footer -->
+    <div id="invisible"></div>
 
-    <footer class="page-footer fixed-bottom">
-        <div class="footer-copyright text-center pb-0 pt-5"><b>Copyright &copy</b></div>
+    <!-- footer section of page -->
+    <footer>
+        <h6>Copyright &copy</h6>
     </footer>
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -78,6 +59,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
