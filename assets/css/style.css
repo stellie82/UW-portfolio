@@ -4,22 +4,134 @@
     clear: both;
 } */
 
-li {
-    list-style-type: none;
-}
-
-.sidebar, .main {
-    display: inline-block;
+.main {
+    margin: 0;
+    padding: 0;
     height: 1000px;
 }
 
-.main {
-    float: right;
-    background-image: url(assets/images/20190808_132312.jpg);
+.main:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
+    /* opacity: 0.9; */
+    background: url(../images/valley.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main h1 {
+    position: relative;
+    z-index: 2;
+    padding: 300px 0 0 200px;
+    color: black;
+    text-shadow: 2px 2px 4px silver;
+}
+
+.main p {
+    position: relative;
+    z-index: 2;
+    padding: 20px 0 20px 200px;
+    color: black;
+    text-shadow: 2px 2px 4px silver;
+}
+
+.content {
+    height: 800px;
+    padding: 0;
+}
+
+.content:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
+    /* opacity: 0.9; */
+    background: url(../images/morningmist.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #me {
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    z-index: 5;
+    top: 440px;
+    left: 200px;
+    border-radius: 50px;
+}
+
+ul {
+    margin: 0;
+    padding: 0 200px;
+}
+li {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding: 0 50px 0 0;
+    /* text-shadow: 2px 2px 4px #000000; */
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: purple;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 50px 200px;
     width: 100%;
-    height: auto;
-    opacity: .25;
+    background-image: url(../images/texture.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: ghostwhite;
+    text-shadow: 2px 2px 4px blue;
+}
+
+.jumbotron ul {
+    padding: 10px 0 0 0;
+}
+
+.info {
+    height: 600px;
+    width: 1050px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    z-index: 2;
+    background-image: url(../images/texture.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .8;
+    border-radius: 15px;
+}
+.info h2 {
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    color: white;
+}
+
+.info p {
+    padding: 10px 50px 0 300px;
+    color: white;
 }
