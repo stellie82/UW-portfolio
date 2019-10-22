@@ -1,74 +1,69 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
-    <title>Portfolio</title>
+    <title>Welcome!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/laugh.jpg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <div class="name p-4">
-                <h2><b>Stella Kim</b></h2>
-            </div>
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-4" id="name">Stella Kim</h1>
+        <p class="lead" id="title">Web Developer</p>
 
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ml-auto">
-                    <li class="breadcrumb-item">
-                        <a href="index.html">About</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- main section of page -->
+    <div class="container-fluid portfolio">
+
+        <div class="info">
+            <h2>My Portfolio</h2>
+            <div class="icon">
+                <img src="assets/images/crystal1.jpg" id="crystal" alt="crystals collector">
+                <p><a href="https://stellie82.github.io/unit-4-game/">Crystals Collector</a></p>
+            </div>
+            <div class="icon">
+                <img src="assets/images/spacebackground.jpg" id="hangman" alt="hangman game">
+                <p><a href="https://stellie82.github.io/Word-Guess-Game/">Space Movie Hangman</a></p>
+            </div>
+            <div class="icon">
+                <img src="assets/images/trivia.jpg" id="trivia" alt="trivia game">
+                <p><a href="https://stellie82.github.io/TriviaGame/">Trivia Game</a></p>
+            </div>
+            <div class="icon">
+                <img src="assets/images/giftastic.jpg" id="gifs" alt="gifs">
+                <p><a href="https://stellie82.github.io/GifTastic/">GifTastic</a></p>
+            </div>
+            <div class="icon">
+                <img src="assets/images/train.jpg" id="train" alt="train">
+                <p><a href="https://stellie82.github.io/Train-Scheduler/">Train Schedule</a></p>
+            </div>
+            <div class="icon">
+                <img src="assets/images/cocktail.jpeg" id="cocktail" alt="cocktail">
+                <p><a href="https://neverage84.github.io/Project_1//">Happy Hour</a></p>
             </div>
         </div>
-    </nav>
 
-    <div class="container">
-        <div class="row-fluid mt-5 p-3">
-            <div class="col-12">
-                <h2><b>Portfolio</b></h2>
-                <hr>
-                <div class="row">
-                    <div class="col-4 icon">
-                        <img src="assets/images/hiking.jpg" id="hiking" alt="hiking tracker">
-                        <div class="badge badge-primary">Hiking Tracker</div>
-                    </div>
-                    <div class="col-4 icon">
-                        <img src="assets/images/running.jpg" id="running" alt="running tracker">
-                        <div class="badge badge-primary">Running Tracker</div>
-                    </div>
-                    <div class="col-4 icon">
-                        <img src="assets/images/travel.jpg" id="travel" alt="world traveling">
-                        <div class="badge badge-primary">World Travel</div>
-                    </div>
-                    <div class="col-4 icon">
-                        <img src="assets/images/question.jpg" id="question" alt="what else?">
-                        <div class="badge badge-primary">What else?</div>
-                    </div>    
-                </div>
-            </div>
-        </div>
     </div>
 
-    <div class="container invisible"></div>
-
-    <footer class="page-footer fixed-bottom">
-        <div class="footer-copyright text-center pb-0 pt-5"><b>Copyright &copy</b></div>
+    <!-- footer section of page -->
+    <footer>
+        <h6>Copyright &copy</h6>
     </footer>
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -81,6 +76,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

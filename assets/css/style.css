@@ -1,9 +1,4 @@
-/* .clearfix::after {
-    content: " ";
-    display: block;
-    clear: both;
-} */
-
+/* Main */
 .main {
     margin: 0;
     padding: 0;
@@ -40,12 +35,40 @@
     text-shadow: 2px 2px 4px silver;
 }
 
-.content {
+ul {
+    margin: 0;
+    padding: 0 200px;
+}
+li {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding: 0 50px 0 0;
+}
+
+a:link {
+    color: ghostwhite;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(78, 78, 230);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(15, 199, 153);
+}
+
+
+
+/* About */
+.about {
     height: 800px;
     padding: 0;
 }
 
-.content:before {
+.about:before {
     content: ' ';
     display: block;
     position: absolute;
@@ -69,35 +92,9 @@
     border-radius: 50px;
 }
 
-ul {
-    margin: 0;
-    padding: 0 200px;
-}
-li {
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    padding: 0 50px 0 0;
-    /* text-shadow: 2px 2px 4px #000000; */
-}
-
-a:link {
-    color: black;
-}
-
-a:visited {
-    text-decoration: none;
-    color: blue;
-}
-
-a:hover {
-    text-decoration: none;
-    color: purple;
-}
-
 .jumbotron {
     margin: 0;
-    padding: 50px 200px;
+    padding: 40px 200px;
     width: 100%;
     background-image: url(../images/texture.jpeg);
     background-repeat: no-repeat;
@@ -109,13 +106,14 @@ a:hover {
 
 .jumbotron ul {
     padding: 10px 0 0 0;
+    text-shadow: none;
 }
 
 .info {
-    height: 600px;
+    height: 700px;
     width: 1050px;
     position: relative;
-    top: 100px;
+    top: 75px;
     left: 200px;
     z-index: 2;
     background-image: url(../images/texture.jpeg);
@@ -125,13 +123,106 @@ a:hover {
     opacity: .8;
     border-radius: 15px;
 }
-.info h2 {
-    padding: 20px 50px 20px 50px;
+.info h2, .portfolio h2, .contact h2 {
+    padding: 40px 50px 20px 50px;
     text-align: center;
-    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: ghostwhite;
 }
 
-.info p {
+.info p, .portfolio p {
     padding: 10px 50px 0 300px;
-    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: ghostwhite;
+}
+
+
+
+/* Portfolio */
+.portfolio {
+    height: 800px;
+    padding: 0;
+}
+
+.portfolio:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
+    /* opacity: 0.9; */
+    background: url(../images/design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 20px 45px;
+    padding: 0;
+}
+
+.icon p {
+    text-align: center;
+    padding: 0;
+}
+
+#hiking, #travel, #hangman, #crystal, #trivia, #gifs, #train, #cocktail {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+
+/* Contact */
+.contact {
+    height: 800px;
+    padding: 0;
+}
+
+.contact:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
+    /* opacity: 0.9; */
+    background: url(../images/telephone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#laugh {
+    position: absolute;
+    height: 240px;
+    padding: 20px;
+    z-index: 5;
+    top: 425px;
+    right: 250px;
+    border-radius: 100px;
+}
+
+.form-group {
+    padding: 10px 40px;
+}
+
+label {
+    color: rgb(78, 78, 230);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    margin-left: 40px;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: ghostwhite;
+    background-color: rgb(78, 78, 230);
 }
