@@ -264,3 +264,12 @@ label {
 .resume-border {
     text-align: center;
 }
+
+p.social {
+    padding: 0 20px;
+}
+
+#linkedin, #github {
+    width: 65px;
+    padding: 0 0 0 20px;
+}
