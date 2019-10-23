@@ -60,18 +60,18 @@ li {
 }
 
 a:link {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: blue;
 }
 
 a:visited {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
     color: rgb(78, 78, 230);
 }
 
 a:hover {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
     color: rgb(15, 199, 153);
 }
@@ -154,7 +154,7 @@ a:hover {
 .info p, .portfolio p {
     padding: 10px 50px 0 300px;
     font-family: 'Raleway', sans-serif;
-    font-size: 14Spx;
+    font-size: 16px;
     color: ghostwhite;
 }
 
@@ -237,15 +237,15 @@ a:hover {
 
 label {
     color: rgb(78, 78, 230);
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .btn {
     margin-left: 40px;
     padding: 10px 20px;
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
     color: ghostwhite;
     background-color: rgb(78, 78, 230);
 }
@@ -278,7 +278,7 @@ label {
 .resume p {
     margin: 10px 0;
     padding: 0 50px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
 }
 
