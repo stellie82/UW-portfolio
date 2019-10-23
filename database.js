@@ -1,3 +1,5 @@
+// Store contact inputs into database.
+
 $(document).ready(function () {
 
     // Your web app's Firebase configuration
