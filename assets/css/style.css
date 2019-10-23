@@ -23,16 +23,18 @@
     position: relative;
     z-index: 2;
     padding: 300px 0 0 250px;
+    font-family: 'Work Sans', sans-serif;
     color: black;
-    text-shadow: 2px 2px 4px silver;
+    text-shadow: 2px 2px 4px ghostwhite;
 }
 
 .main p {
     position: relative;
     z-index: 2;
     padding: 20px 0 20px 250px;
+    font-family: 'Raleway', sans-serif;
     color: black;
-    text-shadow: 2px 2px 4px silver;
+    text-shadow: 2px 2px 4px ghostwhite;
 }
 
 ul {
@@ -58,15 +60,18 @@ li {
 }
 
 a:link {
-    color: ghostwhite;
+    font-family: 'Raleway', sans-serif;
+    color: blue;
 }
 
 a:visited {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: rgb(78, 78, 230);
 }
 
 a:hover {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: rgb(15, 199, 153);
 }
@@ -142,13 +147,13 @@ a:hover {
 .info h2, .portfolio h2, .contact h2, .resume h2 {
     padding: 40px 50px 40px 50px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: ghostwhite;
 }
 
 .info p, .portfolio p {
     padding: 10px 50px 0 300px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14Spx;
     color: ghostwhite;
 }
@@ -274,7 +279,7 @@ label {
     margin: 10px 0;
     padding: 0 50px;
     font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .resume-border {
