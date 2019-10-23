@@ -22,7 +22,7 @@
 .main h1 {
     position: relative;
     z-index: 2;
-    padding: 300px 0 0 200px;
+    padding: 300px 0 0 250px;
     color: black;
     text-shadow: 2px 2px 4px silver;
 }
@@ -30,20 +30,31 @@
 .main p {
     position: relative;
     z-index: 2;
-    padding: 20px 0 20px 200px;
+    padding: 20px 0 20px 250px;
     color: black;
     text-shadow: 2px 2px 4px silver;
 }
 
 ul {
     margin: 0;
-    padding: 0 200px;
+    padding: 0 0 0 250px;
 }
+
 li {
     display: inline-block;
     position: relative;
     z-index: 2;
-    padding: 0 50px 0 0;
+    padding: 0 40px 0 0;
+}
+
+.right ul {
+    text-align: right;
+    padding: 300px 250px 0 0;
+}
+
+.right li {
+    display: block;
+    padding: 0 0 20px 0;
 }
 
 a:link {
@@ -58,6 +69,11 @@ a:visited {
 a:hover {
     text-decoration: none;
     color: rgb(15, 199, 153);
+}
+
+#social-front {
+    width: 30px;
+    padding: 0;
 }
 
 
@@ -265,7 +281,15 @@ label {
     text-align: center;
 }
 
-#linkedin, #github {
-    width: 65px;
-    padding: 0 0 0 20px;
+#social {
+    width: 30px;
+    padding: 0;
+}
+
+#references {
+    text-align: right;
+}
+
+#references li {
+    padding: 0 0 0 30px;
 }
