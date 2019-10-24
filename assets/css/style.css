@@ -1,300 +1,906 @@
 /* Main */
-.main {
-    margin: 0;
-    padding: 0;
-    height: 1000px;
+@media (min-width: 992px) {
+    .main {
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+    }
+
+    .main:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        background: url(../images/valley.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main h1 {
+        position: relative;
+        z-index: 2;
+        padding: 300px 0 0 250px;
+        font-family: 'Work Sans', sans-serif;
+        color: black;
+        text-shadow: 2px 2px 4px ghostwhite;
+    }
+
+    .main p {
+        position: relative;
+        z-index: 2;
+        padding: 20px 0 20px 250px;
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        text-shadow: 2px 2px 4px ghostwhite;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0 0 0 250px;
+    }
+
+    li {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        padding: 0 40px 0 0;
+    }
+
+    .right ul {
+        text-align: right;
+        padding: 300px 250px 0 0;
+    }
+
+    .right li {
+        display: block;
+        padding: 0 0 20px 0;
+    }
+
+    a:link {
+        font-family: 'Nunito Sans', sans-serif;
+        color: blue;
+    }
+
+    a:visited {
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        color: rgb(78, 78, 230);
+    }
+
+    a:hover {
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        color: rgb(15, 199, 153);
+    }
+
+    #social-front {
+        width: 30px;
+        padding: 0;
+    }
+
+
+
+    /* About */
+    .about {
+        height: 800px;
+        padding: 0;
+    }
+
+    .about:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        background: url(../images/morningmist.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #me {
+        position: absolute;
+        width: 300px;
+        padding: 20px;
+        z-index: 5;
+        top: 440px;
+        left: 200px;
+        border-radius: 50px;
+    }
+
+    .jumbotron {
+        margin: 0;
+        padding: 40px 200px;
+        width: 100%;
+        background-image: url(../images/texture.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: ghostwhite;
+        text-shadow: 2px 2px 4px blue;
+    }
+
+    .jumbotron ul {
+        padding: 10px 0 0 0;
+        text-shadow: none;
+    }
+
+    .info {
+        height: 700px;
+        width: 1050px;
+        position: relative;
+        top: 75px;
+        left: 200px;
+        z-index: 2;
+        background-image: url(../images/texture.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: .8;
+        border-radius: 15px;
+    }
+    .info h2, .portfolio h2, .contact h2, .resume h2 {
+        padding: 40px 50px 40px 50px;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        color: ghostwhite;
+    }
+
+    .info p, .portfolio p {
+        padding: 10px 50px 0 300px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        color: ghostwhite;
+    }
+
+
+
+    /* Portfolio */
+    .portfolio {
+        height: 800px;
+        padding: 0;
+    }
+
+    .portfolio:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        /* opacity: 0.9; */
+        background: url(../images/portfolio.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        margin: 20px 0 20px 45px;
+        padding: 0;
+    }
+
+    .icon p {
+        text-align: center;
+        padding: 0;
+    }
+
+    #hiking, #travel, #hangman, #crystal, #trivia, #gifs, #train, #cocktail {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+
+
+    /* Contact */
+    .contact {
+        height: 800px;
+        padding: 0;
+    }
+
+    .contact:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        /* opacity: 0.9; */
+        background: url(../images/telephone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #laugh {
+        position: absolute;
+        height: 240px;
+        padding: 20px;
+        z-index: 5;
+        top: 425px;
+        left: 900px;
+        border-radius: 100px;
+    }
+
+    .form-group {
+        padding: 5px 40px;
+    }
+
+    label {
+        color: rgb(78, 78, 230);
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .btn {
+        margin-left: 40px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+        color: ghostwhite;
+        background-color: rgb(78, 78, 230);
+    }
+
+
+
+    /* Resume */
+    .resume {
+        height: 800px;
+        padding: 0;
+    }
+
+    .resume:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        /* opacity: 0.9; */
+        background: url(../images/resume.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .resume li {
+        display: block;
+    }
+    .resume p {
+        margin: 10px 0;
+        padding: 0 50px;
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .resume-border {
+        text-align: center;
+    }
+
+    #social {
+        width: 30px;
+        padding: 0;
+    }
+
+    #references {
+        text-align: right;
+    }
+
+    #references li {
+        padding: 0 0 0 30px;
+    }
 }
 
-.main:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    z-index: -1;
-    /* opacity: 0.9; */
-    background: url(../images/valley.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main {
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+    }
+
+    .main:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        background: url(../images/valley.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main h1 {
+        position: relative;
+        z-index: 2;
+        padding: 300px 0 0 250px;
+        font-family: 'Work Sans', sans-serif;
+        color: black;
+        text-shadow: 2px 2px 4px ghostwhite;
+    }
+
+    .main p {
+        position: relative;
+        z-index: 2;
+        padding: 20px 0 20px 250px;
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        text-shadow: 2px 2px 4px ghostwhite;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0 0 0 250px;
+    }
+
+    li {
+        list-style: none;
+        position: relative;
+        z-index: 2;
+        padding: 0 40px 0 0;
+    }
+
+    .right ul {
+        text-align: right;
+        padding: 300px 250px 0 0;
+    }
+
+    .right li {
+        display: block;
+        padding: 20px 0 10px 0;
+    }
+
+    a:link {
+        font-family: 'Nunito Sans', sans-serif;
+        color: blue;
+    }
+
+    a:visited {
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        color: rgb(78, 78, 230);
+    }
+
+    a:hover {
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        color: rgb(15, 199, 153);
+    }
+
+    #social-front {
+        width: 30px;
+        padding: 0;
+    }
+
+
+
+    /* About */
+    .about {
+        height: 800px;
+        padding: 0;
+    }
+
+    .about:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        background: url(../images/morningmist.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #me {
+        position: absolute;
+        width: 300px;
+        padding: 20px;
+        z-index: 5;
+        top: 440px;
+        border-radius: 50px;
+    }
+
+    .jumbotron {
+        margin: 0;
+        padding: 40px 200px;
+        width: 100%;
+        background-image: url(../images/texture.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: ghostwhite;
+        text-shadow: 2px 2px 4px blue;
+    }
+
+    .jumbotron ul {
+        padding: 10px 0 0 0;
+        text-shadow: none;
+    }
+
+    .info {
+        height: 700px;
+        width: auto;
+        position: relative;
+        top: 75px;
+        z-index: 2;
+        background-image: url(../images/texture.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: .8;
+        border-radius: 15px;
+    }
+    .info h2, .portfolio h2, .contact h2, .resume h2 {
+        padding: 40px 50px 40px 50px;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        color: ghostwhite;
+    }
+
+    .info p, .portfolio p {
+        padding: 10px 50px 0 300px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        color: ghostwhite;
+    }
+
+
+
+    /* Portfolio */
+    .portfolio {
+        height: 800px;
+        padding: 0;
+    }
+
+    .portfolio:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        /* opacity: 0.9; */
+        background: url(../images/portfolio.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        margin: 20px 0 20px 45px;
+        padding: 0;
+    }
+
+    .icon p {
+        text-align: center;
+        padding: 0;
+    }
+
+    #hiking, #travel, #hangman, #crystal, #trivia, #gifs, #train, #cocktail {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+
+
+    /* Contact */
+    .contact {
+        height: 800px;
+        padding: 0;
+    }
+
+    .contact:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        background: url(../images/telephone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #laugh {
+        position: absolute;
+        height: 240px;
+        padding: 20px;
+        z-index: 5;
+        top: 525px;
+        right: 30px;
+        border-radius: 100px;
+    }
+
+    .form-group {
+        padding: 5px 40px;
+    }
+
+    label {
+        color: rgb(78, 78, 230);
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .btn {
+        margin-left: 40px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+        color: ghostwhite;
+        background-color: rgb(78, 78, 230);
+    }
+
+
+
+    /* Resume */
+    .resume {
+        height: 800px;
+        padding: 0;
+    }
+
+    .resume:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        /* opacity: 0.9; */
+        background: url(../images/resume.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .resume li {
+        display: block;
+    }
+    .resume p {
+        margin: 10px 0;
+        padding: 0 50px;
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .resume-border {
+        text-align: center;
+    }
+
+    #social {
+        width: 30px;
+        padding: 0;
+    }
+
+    #references {
+        text-align: right;
+    }
+
+    #references li {
+        padding: 0 0 10px 30px;
+    }
 }
 
-.main h1 {
-    position: relative;
-    z-index: 2;
-    padding: 300px 0 0 250px;
-    font-family: 'Work Sans', sans-serif;
-    color: black;
-    text-shadow: 2px 2px 4px ghostwhite;
-}
-
-.main p {
-    position: relative;
-    z-index: 2;
-    padding: 20px 0 20px 250px;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    text-shadow: 2px 2px 4px ghostwhite;
-}
-
-ul {
-    margin: 0;
-    padding: 0 0 0 250px;
-}
-
-li {
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    padding: 0 40px 0 0;
-}
-
-.right ul {
-    text-align: right;
-    padding: 300px 250px 0 0;
-}
-
-.right li {
-    display: block;
-    padding: 0 0 20px 0;
-}
-
-a:link {
-    font-family: 'Nunito Sans', sans-serif;
-    color: blue;
-}
-
-a:visited {
-    font-family: 'Nunito Sans', sans-serif;
-    text-decoration: none;
-    color: rgb(78, 78, 230);
-}
-
-a:hover {
-    font-family: 'Nunito Sans', sans-serif;
-    text-decoration: none;
-    color: rgb(15, 199, 153);
-}
-
-#social-front {
-    width: 30px;
-    padding: 0;
-}
 
 
 
-/* About */
-.about {
-    height: 800px;
-    padding: 0;
-}
-
-.about:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    z-index: -1;
-    /* opacity: 0.9; */
-    background: url(../images/morningmist.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#me {
-    position: absolute;
-    width: 300px;
-    padding: 20px;
-    z-index: 5;
-    top: 440px;
-    left: 200px;
-    border-radius: 50px;
-}
-
-.jumbotron {
-    margin: 0;
-    padding: 40px 200px;
-    width: 100%;
-    background-image: url(../images/texture.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: ghostwhite;
-    text-shadow: 2px 2px 4px blue;
-}
-
-.jumbotron ul {
-    padding: 10px 0 0 0;
-    text-shadow: none;
-}
-
-.info {
-    height: 700px;
-    width: 1050px;
-    position: relative;
-    top: 75px;
-    left: 200px;
-    z-index: 2;
-    background-image: url(../images/texture.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: .8;
-    border-radius: 15px;
-}
-.info h2, .portfolio h2, .contact h2, .resume h2 {
-    padding: 40px 50px 40px 50px;
-    text-align: center;
-    font-family: 'Work Sans', sans-serif;
-    color: ghostwhite;
-}
-
-.info p, .portfolio p {
-    padding: 10px 50px 0 300px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    color: ghostwhite;
-}
 
 
 
-/* Portfolio */
-.portfolio {
-    height: 800px;
-    padding: 0;
-}
 
-.portfolio:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    z-index: -1;
-    /* opacity: 0.9; */
-    background: url(../images/portfolio.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main {
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+    }
 
-.icon {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    margin: 20px 0 20px 45px;
-    padding: 0;
-}
+    .main:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        background: url(../images/valley.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
-.icon p {
-    text-align: center;
-    padding: 0;
-}
+    .main h1 {
+        position: relative;
+        z-index: 2;
+        padding: 300px 0 0 250px;
+        font-family: 'Work Sans', sans-serif;
+        color: black;
+        text-shadow: 2px 2px 4px ghostwhite;
+    }
 
-#hiking, #travel, #hangman, #crystal, #trivia, #gifs, #train, #cocktail {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-}
+    .main p {
+        position: relative;
+        z-index: 2;
+        padding: 20px 0 20px 250px;
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        text-shadow: 2px 2px 4px ghostwhite;
+    }
 
+    ul {
+        margin: 0;
+        padding: 0 0 0 250px;
+    }
 
+    li {
+        list-style: none;
+        position: relative;
+        z-index: 2;
+        padding: 0 40px 0 0;
+    }
 
-/* Contact */
-.contact {
-    height: 800px;
-    padding: 0;
-}
+    .right ul {
+        text-align: right;
+        padding: 300px 250px 0 0;
+    }
 
-.contact:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    z-index: -1;
-    /* opacity: 0.9; */
-    background: url(../images/telephone.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+    .right li {
+        display: block;
+        padding: 20px 0 10px 0;
+    }
 
-#laugh {
-    position: absolute;
-    height: 240px;
-    padding: 20px;
-    z-index: 5;
-    top: 425px;
-    right: 250px;
-    border-radius: 100px;
-}
+    a:link {
+        font-family: 'Nunito Sans', sans-serif;
+        color: blue;
+    }
 
-.form-group {
-    padding: 5px 40px;
-}
+    a:visited {
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        color: rgb(78, 78, 230);
+    }
 
-label {
-    color: rgb(78, 78, 230);
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-}
+    a:hover {
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        color: rgb(15, 199, 153);
+    }
 
-.btn {
-    margin-left: 40px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    color: ghostwhite;
-    background-color: rgb(78, 78, 230);
-}
+    #social-front {
+        width: 30px;
+        padding: 0;
+    }
 
 
 
-/* Resume */
-.resume {
-    height: 800px;
-    padding: 0;
-}
+    /* About */
+    .about {
+        height: 800px;
+        padding: 0;
+    }
 
-.resume:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    z-index: -1;
-    /* opacity: 0.9; */
-    background: url(../images/resume.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+    .about:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        background: url(../images/morningmist.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
-.resume li {
-    display: block;
-}
-.resume p {
-    margin: 10px 0;
-    padding: 0 50px;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-}
+    #me {
+        position: absolute;
+        width: 300px;
+        padding: 20px;
+        z-index: 5;
+        top: 440px;
+        border-radius: 50px;
+    }
 
-.resume-border {
-    text-align: center;
-}
+    .jumbotron {
+        margin: 0;
+        padding: 40px 200px;
+        width: 100%;
+        background-image: url(../images/texture.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: ghostwhite;
+        text-shadow: 2px 2px 4px blue;
+    }
 
-#social {
-    width: 30px;
-    padding: 0;
-}
+    .jumbotron ul {
+        padding: 10px 0 0 0;
+        text-shadow: none;
+    }
 
-#references {
-    text-align: right;
-}
+    .info {
+        height: 700px;
+        width: auto;
+        position: relative;
+        top: 75px;
+        z-index: 2;
+        background-image: url(../images/texture.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: .8;
+        border-radius: 15px;
+    }
+    .info h2, .portfolio h2, .contact h2, .resume h2 {
+        padding: 40px 50px 40px 50px;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        color: ghostwhite;
+    }
 
-#references li {
-    padding: 0 0 0 30px;
+    .info p, .portfolio p {
+        padding: 10px 50px 0 300px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        color: ghostwhite;
+    }
+
+
+
+    /* Portfolio */
+    .portfolio {
+        height: 800px;
+        padding: 0;
+    }
+
+    .portfolio:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        /* opacity: 0.9; */
+        background: url(../images/portfolio.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        margin: 20px 0 20px 45px;
+        padding: 0;
+    }
+
+    .icon p {
+        text-align: center;
+        padding: 0;
+    }
+
+    #hiking, #travel, #hangman, #crystal, #trivia, #gifs, #train, #cocktail {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+
+
+    /* Contact */
+    .contact {
+        height: 800px;
+        padding: 0;
+    }
+
+    .contact:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        background: url(../images/telephone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #laugh {
+        position: absolute;
+        height: 240px;
+        padding: 20px;
+        z-index: 5;
+        top: 575px;
+        right: 30px;
+        border-radius: 100px;
+    }
+
+    .form-group {
+        padding: 5px 40px;
+    }
+
+    label {
+        color: rgb(78, 78, 230);
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .btn {
+        margin-left: 40px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+        color: ghostwhite;
+        background-color: rgb(78, 78, 230);
+    }
+
+
+
+    /* Resume */
+    .resume {
+        height: 800px;
+        padding: 0;
+    }
+
+    .resume:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+        z-index: -1;
+        /* opacity: 0.9; */
+        background: url(../images/resume.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .resume li {
+        display: block;
+    }
+    .resume p {
+        margin: 10px 0;
+        padding: 0 50px;
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .resume-border {
+        text-align: center;
+    }
+
+    #social {
+        width: 30px;
+        padding: 0;
+    }
+
+    #references {
+        text-align: right;
+    }
+
+    #references li {
+        padding: 0 0 10px 30px;
+    }
 }
