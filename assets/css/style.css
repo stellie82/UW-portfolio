@@ -131,10 +131,11 @@
 
     .info {
         height: 700px;
-        width: 1050px;
+        width: auto;
         position: relative;
         top: 75px;
-        left: 200px;
+        margin-left: 200px;
+        margin-right: 200px;
         z-index: 2;
         background-image: url(../images/texture.jpeg);
         background-repeat: no-repeat;
