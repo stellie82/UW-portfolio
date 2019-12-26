@@ -201,57 +201,6 @@
 
 
 
-    /* Contact */
-    .contact {
-        height: 800px;
-        padding: 0;
-    }
-
-    .contact:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 1000px;
-        z-index: -1;
-        /* opacity: 0.9; */
-        background: url(../images/telephone.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    #laugh {
-        position: absolute;
-        height: 240px;
-        padding: 20px;
-        z-index: 5;
-        top: 425px;
-        left: 900px;
-        border-radius: 100px;
-    }
-
-    .form-group {
-        padding: 5px 40px;
-    }
-
-    label {
-        color: rgb(78, 78, 230);
-        font-size: 16px;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .btn {
-        margin-left: 40px;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-family: 'Raleway', sans-serif;
-        color: ghostwhite;
-        background-color: rgb(78, 78, 230);
-    }
-
-
-
     /* Resume */
     .resume {
         height: 800px;
