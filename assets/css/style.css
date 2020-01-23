@@ -534,7 +534,8 @@
         font-family: 'Raleway', sans-serif;
     }
 
-    .resume-border {
+    p.resume-border {
+        padding: 450px 0 0 0;
         text-align: center;
     }
 
@@ -838,7 +839,8 @@
         font-family: 'Raleway', sans-serif;
     }
 
-    .resume-border {
+    p.resume-border {
+        padding: 450px 0 0 0;
         text-align: center;
     }
 
